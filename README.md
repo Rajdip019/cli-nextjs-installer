@@ -1,4 +1,4 @@
-# Next.js Instraller 
+# Next.js Instraller but on steriods 😮
 ### Now install your next.js app in seconds without any configuration.
 <img width="1440" alt="Screenshot 2022-09-19 at 12 58 12 AM" src="https://user-images.githubusercontent.com/91758830/190925009-bc3673b3-cdd0-4a85-ab16-56a90260c07e.png">
 
