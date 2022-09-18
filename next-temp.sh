@@ -25,6 +25,7 @@ fi
 if [ -z "$firebase"]; then
 firebase="y"
 fi
+
 #Installing Next.js
 npx create-next-app@latest $app_name --ts
 cd $app_name
@@ -47,7 +48,7 @@ module.exports = {
 }
 EOL
 
-echo "${bold}tailwind.config.js build and cofigured ✅"
+echo "${bold}Success:  ${normal}tailwind.config.js build and cofigured ✅"
 rm -rf styles
 mkdir styles
 cd styles
@@ -102,7 +103,7 @@ echo "${bold} Configuring firebase..."
 npm install firebase
 mkdir lib
 cd lib
-cat >> clientApp.ts <<EOL
+cat >> firebaseConfig.ts <<EOL
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -256,6 +257,7 @@ cat >> .eslintrc.json << EOL
 EOL
 mkdir interfaces
 mkdir helpers
+mkdir database
 echo "babel configured ✅"
 echo "${bold}Finished:  ${normal}All set and ready to go! ✅"
 
