@@ -29,6 +29,10 @@ bash next-temp.sh
 
 That's it. Now install next.js and configure it in seconds with this tool.
 
+## Alpha Release
+
+You can also download the first alpha release. Here is a link to that : [Alpha Release](https://github.com/Rajdip019/cli-nextjs-instraller/releases/tag/alpha)
+
 ## Facing problem?
 
 If you are facing any problem while runmig this tool or you want a new feature or you want to make this project even better then please feel free to raise an issue. You can also directly reach out to me as well on twitter or linkedIn (Link given below).
