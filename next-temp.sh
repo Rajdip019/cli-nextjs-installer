@@ -16,13 +16,13 @@ read material
 echo "${bold}Do you want to add Firebase? (Y/N)"
 read firebase
 
-if [ -z "$tailwind"]; then
+if [ -z "$tailwind" ]; then
 tailwind="y"
 fi
-if [ -z "$material"]; then
+if [ -z "$material" ]; then
 material="y"
 fi
-if [ -z "$firebase"]; then
+if [ -z "$firebase" ]; then
 firebase="y"
 fi
 
