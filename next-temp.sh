@@ -16,12 +16,21 @@ read material
 echo "${bold}Do you want to add Firebase? (Y/N)"
 read firebase
 
+if [ -z "$tailwind"]; then
+tailwind="y"
+fi
+if [ -z "$material"]; then
+material="y"
+fi
+if [ -z "$firebase"]; then
+firebase="y"
+fi
 #Installing Next.js
 npx create-next-app@latest $app_name --ts
 cd $app_name
 
 # if tailwind is true
-if [ "$tailwind" == "y" ]; then
+if [ "$tailwind" == "y" ] || [ "$tailwind" == "Y" ]; then
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 cat >> tailwind.config.js <<EOL
@@ -83,12 +92,12 @@ cd ../
 fi
 
 # if Material UI is true
-if [ "$material" == "y" ]; then
+if [ "$material" == "y" ] || [ "$material" == "Y" ]; then
 npm install @mui/material @emotion/react @emotion/styled
 echo "${bold}Success:  ${normal}Material UI Installed ✅"
 fi
 
-if [ "$firebase" == "y" ]; then
+if [ "$firebase" == "y" ] || [ "$firebase" == "Y" ]; then
 echo "${bold} Configuring firebase..."
 npm install firebase
 mkdir lib
@@ -132,7 +141,7 @@ echo "${bold}Success:  ${normal}Firebase configured ✅"
 echo "${bold}Imp:  ${normal}Add your env for Firebase and restart the server."
 fi
 
-if [ "$tailwind" != "y" ]; then
+if [ "$tailwind" != "y" ] && [ "$tailwind" != "Y" ]; then
 cd pages
 rm -rf index.tsx
 cat >> index.tsx <<EOL
