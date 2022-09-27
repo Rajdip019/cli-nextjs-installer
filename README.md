@@ -34,6 +34,10 @@ That's it. Now install next.js and configure it in seconds with this tool.
 You can also download the first alpha release. Here is a link to that : [Alpha Release](https://github.com/Rajdip019/cli-nextjs-instraller/releases/tag/alpha)
 
 ### More features coming soon....
+1. Setup Firebase Authentication
+2. Setup next-auth
+3. Setup Mongo DB
+4. Full authentication workflow.
 
 ## Facing problem?
 
