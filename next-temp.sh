@@ -256,7 +256,13 @@ cat >> .eslintrc.json << EOL
 }
 EOL
 mkdir interfaces
+cd interfaces
+touch example.d.ts
+cd ../
 mkdir helpers
+cd helpers
+touch helper.ts
+cd ../
 mkdir database
 echo "babel configured ✅"
 echo "${bold}Finished:  ${normal}All set and ready to go! ✅"
